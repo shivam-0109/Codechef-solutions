@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int m,h;
+        cin>>m>>h;
+        int h2 = h*h;
+        
+        int bmi = m/h2;
+        
+        if(bmi<=18){
+            cout<<"1"<<endl;
+        }else if(18<bmi && bmi<25){
+            cout<<"2"<<endl;
+        }else if(24<bmi && bmi<30){
+            cout<<"3"<<endl;
+        }else if(bmi>=30){
+            cout<<"4"<<endl;
+        }
+    }
+	// your code goes here
+	return 0;
+}
